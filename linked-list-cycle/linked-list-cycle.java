@@ -12,7 +12,6 @@
 public class Solution {
     public boolean hasCycle(ListNode head) {
     		HashMap<ListNode,Integer> hash = new HashMap<>();
-			ListNode temp = new ListNode(0);
 			while(head != null) {
 				if (hash.containsKey(head)) {
 					return true;
